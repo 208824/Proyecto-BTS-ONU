@@ -1,0 +1,181 @@
+@font-face{
+    font-family: Lovelo-LineLight;
+    src: url('/Lovelo/Lovelo/Commercial/TTF/Lovelo-Black.ttf') format('truetype');
+}
+body{
+    width:auto;
+    height: auto;
+    font-size: 20px;
+    background-color: rgb(210, 166, 252);
+    font-family: Lovelo-LineLight;
+    background-image: url(/fondo\ bts5.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: auto;
+    
+   
+
+}
+#principal{
+    width: auto;
+    height: 1200px;
+}
+
+header{
+    background-color: rgb(210, 166, 252);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+.logo-header img{
+    width: 50px;
+    
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+.nav-menu li{
+    margin-right: 1rem;
+    
+}
+.nav-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu li:last-child{
+    background:#535353;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width:768px){
+        .checkbtn{
+            display: block;
+        }
+        .menu-icon{
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .nav-menu ul{
+            display: block;
+            position: fixed;
+            top:70px;
+            left:-100%;
+            background: rgb(210, 166, 252);
+            width: 80%;
+            height: 100vh;
+            right: 0;
+        }
+        .nav-menu ul li{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        .nav-menu ul li:last-child{
+            background: none;
+            padding: 1rem;
+           
+        }
+        #check:checked ~ ul{
+            left: 0;
+            transition: all .25s;
+        }
+    }
+
+.slider #mercancia .texto .qr #body  #qr .frase1 .frase2{
+   width: 95%; 
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation:cambio 20s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+   box-align: center;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.frase1{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    display: flex;
+    background-color: #fff;
+    
+    
+}
+
+.frase2{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    display: flex;
+    background-color: #fff;
+   
+}
+#piepag{
+    width: auto;
+    height: auto;
+}
+
+.texto{
+    color: rgb(0, 0, 0);
+   border-style:dashed;
+    display: flex;
+   padding-left: 400px;
+    background-color: #fff;
+   
+}
+#qr{
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    padding-left: 550px;
+    margin-bottom: 10px;
+}
+.imagen{
+    display: flexbox;
+    margin-top: 10px;
+    padding-left: 500px;
+}
+#piepag{
+    background-color: rgb(210, 166, 252); ;
+}
